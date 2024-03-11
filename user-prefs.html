@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="user-prefs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" class="css">
+    <title>Place Keeper Settings</title>
+</head>
+
+<body class="main-layout" onload="onInit()">
+    <header class="header full">
+        <article class="header-titles">
+            <h1 class="header-title">Place Keeper - Settings</h1>
+            <h2 class="header-sub-title">Find your way back to your best places...</h2>
+        </article>
+        <nav class="header-nav">
+            <a class="nav-home" href="index.html">Home page</a>
+            <a class="nav-settings prefs" href="user-prefs.html">Settings</a>
+            <a class="nav-places" href="map.html">Favorite places</a>
+        </nav>
+    </header>
+
+    <main class="form-content">
+        <form id="form-settings" onsubmit="onSubmitUserPrefs(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="email" placeholder="Email..." required>
+
+            <label for="age">Age:</label>
+            <input type="range" id="age" class="age" min="16" max="67" step="1" value="18">
+
+            <label for="bgc-color">Set Background color:</label>
+            <input type="color" id="bgc-color" class="bgc-color" value="#f5f5f5">
+
+            <label for="txt-color">Set Text color</label>
+            <input type="color" id="txt-color" class="txt-color">
+
+            <label for="birth-date">Birth date:</label>
+            <input type="date" id="birth-date" class="birth date">
+
+            <label for="birth-time">Time of birth:</label>
+            <input type="time" id="birth-time" class="birth time">
+
+            <button class="save-settings">Save settings</button>
+        </form>
+
+    </main>
+
+    <footer class="footer full">
+        <small class="footer-small">@all rights reserved ...</small>
+    </footer>
+</body>
+
+<script src="js/service/localstorage.js"></script>
+<script src="js/service/util.service.js"></script>
+<script src="js/service/user.service.js"></script>
+<script src="js/service/map.service.js"></script>
+<script src="js/main.controller.js"></script>
+<script src="js/user.controller.js"></script>
+<script src="js/map.controller.js"></script>
+
+</html>

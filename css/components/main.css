@@ -1,0 +1,13 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-block-start: 10vh;
+    margin-block-end: 10vh;
+}
+
+.main-content video {
+    height: 50vh;
+    width: 100%;
+}

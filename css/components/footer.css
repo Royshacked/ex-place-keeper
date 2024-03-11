@@ -1,0 +1,8 @@
+.footer {
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.761);
+}
+
+.footer small {
+    color:whitesmoke
+}
